@@ -30,22 +30,22 @@ export default function GitHubStats() {
 
         {/* Stats Cards */}
         <div className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
-          
-          {/* GitHub Stats */}
+
+          {/* GitHub Profile */}
           <motion.div
             whileHover={{ y: -4 }}
             className="glass rounded-3xl p-6 overflow-hidden"
           >
-            <p className="section-label mb-4">GitHub Stats</p>
+            <p className="section-label mb-4">GitHub Profile</p>
 
             <img
-              src={`https://github-readme-stats-sigma-five.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true`}
-              alt="GitHub Stats"
+              src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${USERNAME}&theme=tokyonight`}
+              alt="GitHub Profile"
               className="w-full rounded-xl"
             />
           </motion.div>
 
-          {/* Top Languages */}
+          {/* Most Used Languages */}
           <motion.div
             whileHover={{ y: -4 }}
             className="glass rounded-3xl p-6 overflow-hidden"
@@ -53,22 +53,22 @@ export default function GitHubStats() {
             <p className="section-label mb-4">Top Languages</p>
 
             <img
-              src={`https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=tokyonight&hide_border=true`}
+              src={`https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${USERNAME}&theme=tokyonight`}
               alt="Top Languages"
               className="w-full rounded-xl"
             />
           </motion.div>
 
-          {/* Streak Stats */}
+          {/* GitHub Stats */}
           <motion.div
             whileHover={{ y: -4 }}
-            className="glass rounded-3xl p-6 overflow-hidden md:col-span-2 lg:col-span-1"
+            className="glass rounded-3xl p-6 overflow-hidden"
           >
-            <p className="section-label mb-4">Contribution Streak</p>
+            <p className="section-label mb-4">Stats</p>
 
             <img
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=tokyonight&hide_border=true`}
-              alt="GitHub Streak"
+              src={`https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=tokyonight`}
+              alt="GitHub Stats"
               className="w-full rounded-xl"
             />
           </motion.div>
