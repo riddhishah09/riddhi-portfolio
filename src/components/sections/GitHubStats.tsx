@@ -7,14 +7,19 @@ const USERNAME = "riddhishah09";
 export default function GitHubStats() {
   return (
     <section id="stats" className="relative py-32 px-6 overflow-hidden">
-      <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-[0.05]"
-        style={{ background: "radial-gradient(circle, #60a5fa, transparent)" }} />
+      <div
+        className="absolute top-0 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-[0.05]"
+        style={{ background: "radial-gradient(circle, #60a5fa, transparent)" }}
+      />
 
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="reveal mb-16">
           <p className="section-label mb-3">04 / Activity</p>
-          <h2 className="font-display font-light" style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}>
+          <h2
+            className="font-display font-light"
+            style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
+          >
             GitHub{" "}
             <span className="gradient-text-static italic">Stats</span>
           </h2>
@@ -29,7 +34,7 @@ export default function GitHubStats() {
           >
             <p className="section-label mb-4">GitHub Stats</p>
             <img
-              src={`https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=transparent&hide_border=true&title_color=d946ef&icon_color=8b5cf6&text_color=a0a0c0&bg_color=00000000&count_private=true`}
+              src={`https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true`}
               alt="GitHub Stats"
               className="w-full rounded-xl"
             />
@@ -42,7 +47,7 @@ export default function GitHubStats() {
           >
             <p className="section-label mb-4">Languages</p>
             <img
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=transparent&hide_border=true&title_color=d946ef&text_color=a0a0c0&bg_color=00000000`}
+              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=tokyonight&hide_border=true`}
               alt="Top Languages"
               className="w-full rounded-xl"
             />
@@ -55,7 +60,7 @@ export default function GitHubStats() {
           >
             <p className="section-label mb-4">Streak</p>
             <img
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=transparent&hide_border=true&stroke=d946ef&ring=8b5cf6&fire=f472b6&currStreakNum=d946ef&sideNums=a0a0c0&currStreakLabel=a0a0c0&sideLabels=a0a0c0&dates=60606090`}
+              src={`https://streak-stats.demolab.com?user=${USERNAME}&theme=tokyonight&hide_border=true`}
               alt="Streak Stats"
               className="w-full rounded-xl"
             />
@@ -78,8 +83,11 @@ export default function GitHubStats() {
               className="w-full min-w-[600px] opacity-80"
             />
           </div>
-          <p className="mt-4 text-xs font-mono text-center"
-            style={{ color: "var(--color-text-faint)" }}>
+
+          <p
+            className="mt-4 text-xs font-mono text-center"
+            style={{ color: "var(--color-text-faint)" }}
+          >
             Every square is a commit. Every commit is a step forward.
           </p>
         </motion.div>
