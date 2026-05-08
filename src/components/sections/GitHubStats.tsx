@@ -30,6 +30,7 @@ export default function GitHubStats() {
 
         {/* Stats Cards */}
         <div className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          
           {/* GitHub Stats */}
           <motion.div
             whileHover={{ y: -4 }}
@@ -38,7 +39,7 @@ export default function GitHubStats() {
             <p className="section-label mb-4">GitHub Stats</p>
 
             <img
-              src={`https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true`}
+              src={`https://github-readme-stats-sigma-five.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true`}
               alt="GitHub Stats"
               className="w-full rounded-xl"
             />
@@ -52,13 +53,13 @@ export default function GitHubStats() {
             <p className="section-label mb-4">Top Languages</p>
 
             <img
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=tokyonight&hide_border=true`}
+              src={`https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=tokyonight&hide_border=true`}
               alt="Top Languages"
               className="w-full rounded-xl"
             />
           </motion.div>
 
-          {/* Streak */}
+          {/* Streak Stats */}
           <motion.div
             whileHover={{ y: -4 }}
             className="glass rounded-3xl p-6 overflow-hidden md:col-span-2 lg:col-span-1"
@@ -66,7 +67,7 @@ export default function GitHubStats() {
             <p className="section-label mb-4">Contribution Streak</p>
 
             <img
-              src={`https://streak-stats.demolab.com?user=${USERNAME}&theme=tokyonight&hide_border=true`}
+              src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=tokyonight&hide_border=true`}
               alt="GitHub Streak"
               className="w-full rounded-xl"
             />
